@@ -1,0 +1,64 @@
+# Load Antigen
+source ~/antigen.zsh
+
+# Load Rust binary in the $PATH
+# source $HOME/.cargo/env
+
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from the default repo (oh-my-zsh)
+antigen bundle git
+antigen bundle pip
+antigen bundle command-not-found
+antigen bundle docker
+
+# Load bundles from external repos
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle ael-code/zsh-colored-man-pages
+
+# If you are installing powerlevel10k theme, 
+# which is the most awesome zsh theme I've come across,
+# Please follow instructions at https://github.com/romkatv/powerlevel10k#getting-started
+antigen theme romkatv/powerlevel10k
+
+# Below is also a decent theme which gets the work done.
+# antigen theme pawelad/honukai-iterm-zsh
+
+# Tell Antigen that you're done
+antigen apply
+
+# Paths
+export PATH="$HOME/.local/bin:$PATH"
+
+# Bash completitions
+autoload -U bashcompinit
+bashcompinit
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Fixes the character glitch with tmux and zsh
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
+
+GLOBAL_CACHE_DIR='/path/to/scratch' # example: /fs/clip-scratch
+
+export PYSERINI_CACHE="${GLOBAL_CACHE_DIR}/smbc/pyserini"
+export TRANSFORMERS_CACHE="${GLOBAL_CACHE_DIR}/smbc"
+export HF_DATASETS_CACHE="${GLOBAL_CACHE_DIR}/smbc/huggingface"
+export TORCH_HOME="${GLOBAL_CACHE_DIR}/mgor/.torch"
+export FLAIR_CACHE_ROOT="${GLOBAL_CACHE_DIR}/mgor/.flair"
+export PIP_CACHE_DIR="${GLOBAL_CACHE_DIR}/mgor/.pip"
+
+# Aliases
+alias hg="history -i | grep"
+alias clr="clear"
+
+### Bashhub.com Installation: https://bashhub.com/docs
+### De-comment if you have bashhub installed. Very useful for searching interactively through command-line history
+# if [ -f ~/.bashhub/bashhub.zsh ]; then
+#     source ~/.bashhub/bashhub.zsh
+# fi
