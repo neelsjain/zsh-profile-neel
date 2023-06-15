@@ -5,7 +5,7 @@ else
     touch ~/.zshrc-old
 fi
 
-cp zshrc-template ~/.zshrc
+cp zshrc-base ~/.zshrc
 
 # Install Antigen from https://github.com/zsh-users/antigen
 # Use git.io/antigen-nightly for the latest version
