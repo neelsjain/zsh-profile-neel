@@ -6,6 +6,7 @@ else
 fi
 
 cp zshrc-base ~/.zshrc
+cp .p10k.zsh ~/
 
 # Install Antigen from https://github.com/zsh-users/antigen
 # Use git.io/antigen-nightly for the latest version
