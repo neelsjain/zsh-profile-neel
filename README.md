@@ -15,12 +15,14 @@ sh setup.sh
 Following the "manual" instructions from https://github.com/romkatv/powerlevel10k, run the following lines:
 
 `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k`
+
 `echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc`
 
 ## Getting Better Display of Icons:
 Following the "Clone the Repo" Option from https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts:
-
-`git clone --depth 1`
-`git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts`
-`cd nerd-fonts`
-`git sparse-checkout add patched-fonts/JetBrainsMono`
+```
+git clone --depth 1
+git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts
+cd nerd-fonts
+git sparse-checkout add patched-fonts/JetBrainsMono
+```
