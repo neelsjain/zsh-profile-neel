@@ -7,8 +7,10 @@ Zsh profile for quickly setting up same configs on remote machines
 To install, run
 ```
 git clone https://github.com/neelsjain/zsh-profile-neel.git
-cd zsh-profile
+cd zsh-profile-neel
 sh setup.sh
+cd ..
+rm -rf zsh-profile-neel
 ```
 
 ## For Setting Theme:
