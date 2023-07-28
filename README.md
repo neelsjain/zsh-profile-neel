@@ -6,7 +6,7 @@ Zsh profile for quickly setting up same configs on remote machines
 
 To install, run
 ```
-git clone https://github.com/maharshi95/zsh-profile.git
+git clone https://github.com/neelsjain/zsh-profile-neel.git
 cd zsh-profile
 sh setup.sh
 ```
