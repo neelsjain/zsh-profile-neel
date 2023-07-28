@@ -16,9 +16,10 @@ rm -rf zsh-profile-neel
 ## For Setting Theme:
 Following the "manual" instructions from https://github.com/romkatv/powerlevel10k, run the following lines:
 
-`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k`
-
-`echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc`
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
 
 ## Getting Better Display of Icons:
 Following the "Clone the Repo" Option from https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts:
