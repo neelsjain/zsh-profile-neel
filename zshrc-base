@@ -44,14 +44,13 @@ bashcompinit
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
 
-GLOBAL_CACHE_DIR='/path/to/scratch' # example: /fs/clip-scratch
+GLOBAL_CACHE_DIR='/cmlscratch/njain17/.cache' # example: /fs/clip-scratch
 
-export PYSERINI_CACHE="${GLOBAL_CACHE_DIR}/smbc/pyserini"
-export TRANSFORMERS_CACHE="${GLOBAL_CACHE_DIR}/smbc"
-export HF_DATASETS_CACHE="${GLOBAL_CACHE_DIR}/smbc/huggingface"
-export TORCH_HOME="${GLOBAL_CACHE_DIR}/mgor/.torch"
-export FLAIR_CACHE_ROOT="${GLOBAL_CACHE_DIR}/mgor/.flair"
-export PIP_CACHE_DIR="${GLOBAL_CACHE_DIR}/mgor/.pip"
+export TRANSFORMERS_CACHE="${GLOBAL_CACHE_DIR}/huggingface_transformers"
+export HF_DATASETS_CACHE="${GLOBAL_CACHE_DIR}/huggingface"
+export TORCH_HOME="${GLOBAL_CACHE_DIR}/.torch"
+export FLAIR_CACHE_ROOT="${GLOBAL_CACHE_DIR}/.flair"
+export PIP_CACHE_DIR="${GLOBAL_CACHE_DIR}/.pip"
 
 # Aliases
 alias hg="history -i | grep"
